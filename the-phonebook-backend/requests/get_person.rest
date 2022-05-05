@@ -1,0 +1,11 @@
+GET http://localhost:3001/api/persons
+
+###
+
+# get by id (exists)
+GET http://localhost:3001/api/persons/626ff9e16b00bf9e4b81ec20
+
+###
+
+# get by id (not exists)
+GET http://localhost:3001/api/persons/abcd

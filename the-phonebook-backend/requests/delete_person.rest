@@ -1,0 +1,7 @@
+# delete (exists)
+DELETE http://localhost:3001/api/persons/627133c8b4d79ed3c43acb3e
+
+###
+
+# delete (does not exist)
+DELETE http://localhost:3001/api/persons/10000

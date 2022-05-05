@@ -1,0 +1,30 @@
+# add
+POST  http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "Susan",
+    "number": "040-123456888"
+}
+
+### 
+
+# add (error, content missing)
+POST  http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "hah"
+}
+
+
+### 
+
+# add (error, already exists)
+POST  http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "Arto Hellas",
+    "number": "040-123456"
+}
